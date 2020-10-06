@@ -12,3 +12,4 @@ elif direction == "right":
   print ("I am painting to the right")
 else: 
   print("I don't know what I'm doing!!")
+
