@@ -2,9 +2,8 @@ print("please enter the activity to be performed")
 
 activity = input()
 
-if activity == "calculate": 
+if activity = "calculate": 
   print("Performing calculations")
-else: 
-  print("Performing activity")
+  print("Performing acitivity")
 
 print("Activity complete!")
