@@ -4,4 +4,3 @@ book_name = input()
 print ("I like", book_name, "books!")
 
 print ("Finished reading book")
-
