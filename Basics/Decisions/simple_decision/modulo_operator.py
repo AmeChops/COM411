@@ -1,4 +1,4 @@
-print("Please enter a number")
+print("Please enter a whole number")
 
 number = int(input())
 
