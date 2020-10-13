@@ -1,17 +1,14 @@
-# The function
-def escape_by():
-  print("How will we escape? 1 - Jump over, 2 - Run around, 3 - Go deeper")
-  plan = int(input())
+def escape_by(plan):
+  if (plan == "jump over"):
+    print ("we cannot escape by jumping over as the boulder is too big")
+  elif (plan == "run around"):
+    print ("we cannot escape by running around as the boulder is too fast")
+  elif (plan == "go deeper"):
+    print ("that may work let's go deeper")
+  else:
+    print("Wecannot escape that way as the boulder is in the way")
 
- # The parameters 
-  if plan == 1:
-   print("We cannot escape by jumping over, the boulder is too big")
-  elif plan == 2:
-   print("We cannot escape by running around, the boulder is moving too fast")
-  elif plan == 3:
-   print("That might just work, let's go deeper")
-    
-# Call the function
-escape_by()
-
+escape_by("jump over")
+escape_by("run around")
+escape_by("go deeper")
 
