@@ -3,7 +3,7 @@ def identify():
   print("What lies before us?")
   item = input()
   
-  if item == str("big boulder"):
+  if (item == "big boulder"):
    print("It's time to run")
   else:
     print("We will be fine")
