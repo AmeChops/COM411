@@ -1,8 +1,9 @@
-print("Please enter a whole number")
+# Ask user for a number 
+print("Please enter a whole number.")
+number = int(input()) 
 
-number = int(input())
-
-if(number % 2 == 0):
-  print("{} is even.".format(number))
+# Display relevant message
+if (number % 2 == 0):
+    print("\nThe number {} is an even number.".format(number))
 else:
-  print("{} is odd.".format(number))
+    print("\nThe number {} is an odd number.".format(number))
