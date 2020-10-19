@@ -26,4 +26,6 @@ def run():
         print("The average of Beep's and Bop's weight is {:.2f}".format(answer))
     else:
         print("I am not sure what you would like to do.")
+
+run()
     
