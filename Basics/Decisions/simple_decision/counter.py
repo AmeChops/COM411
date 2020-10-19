@@ -1,11 +1,31 @@
-print("please enter the first whole number")
+# Ask user for numbers 
+print("Please enter the first whole number?")
+first_number = int(input())
 
-first_number = (input(int))
+print("Please enter the second whole number?")
+second_number = int(input())
 
-print("Please enter the second whole number")
+print("Please enter the third whole number?")
+third_number = int(input()) 
 
-second_number = (input(int))
+even_numbers = 0
+odd_numbers = 0 
 
-print("Please enter the third whole number")
+# Determine which numbers are even and which are odd
+if (first_number % 2 == 0):
+    even_numbers = even_numbers + 1
+else:
+    odd_numbers = odd_numbers + 1
 
-third_number = (input(int))
+if (second_number % 2 == 0):
+    even_numbers = even_numbers + 1
+else:
+    odd_numbers = odd_numbers + 1
+
+if (third_number % 2 == 0):
+    even_numbers = even_numbers + 1
+else:
+    odd_numbers = odd_numbers + 1
+
+# Display result
+print("There were {} even and {} odd numbers.".format(even_numbers, odd_numbers))
