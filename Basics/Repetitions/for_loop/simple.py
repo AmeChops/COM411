@@ -6,11 +6,11 @@ mountains = int(input())
 print("\nDisplaying...")
 
 for mountain in range(mountains):
-print("""
+  print("""
            __
           /  \\_  
          /^    \\
         /  ^    \\_
       _/ ^ ^     ^\\
      /  ^     ^    \\
-""")
+                        """)
