@@ -1,8 +1,12 @@
 # The function
 def listen():
-  print("What sound did I hear?")
-  sound = input()
-  print("That was a loud {}!".format(sound))
 
-# Call the function
+    # Ask user for the sound 
+    print("What sound did I hear?")
+    sound = input() 
+
+    # Display message
+    print("\nThat was a loud", sound)
+
+# Call to function
 listen()

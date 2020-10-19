@@ -1,12 +1,14 @@
 # The function
 def identify():
-  print("What lies before us?")
-  item = input()
-  
-  if (item == "big boulder"):
-   print("It's time to run")
-  else:
-    print("We will be fine")
+    # Ask user for what lies ahead
+    print("What lies before us?")
+    response = input() 
 
-# Call the function
+    # Display message
+    if (response == "a large boulder"):
+        print("It's time to run!")
+    else:
+        print("We will be fine.")
+
+# Call to function
 identify()
