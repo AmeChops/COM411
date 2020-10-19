@@ -1,16 +1,13 @@
-# Display a box
+# Display an ASCII art robot
 print("##########")
-print("#  #  #  #")
-print("#        #")
+print("#  o  o  #")
+print("#  ----  #")
 print("##########")
-print("   ###    ")
-print("##########")
-print("#        #")
-print("#        #")
-print("#        #")
-print("#        #")
-print("#        #")
-print("##########")
-print("   ###    ")
-print("   ###    ")
-print("   ###    ")
+
+# Display an ASCII art robot using a long string
+print(""" 
+##########
+#  o  o  #
+#  ----  #
+##########
+""")
