@@ -1,11 +1,10 @@
-def cross_bridge(steps):
-  for step in range(steps):
-    print("Crossed step.")
-  
-  if (steps > 5):
-    print("the bridge is collapsing")
-  else:
-    print("We must keep going")
+def crossed_bridge(steps):
+    # Display each step 
+    for step in range(steps):
+        print("Crossed step.") 
 
-cross_bridge(3)
-cross_bridge(6)
+    # Display message
+    if (steps > 5):
+        print("The bridge is collapsing!")
+    else: 
+        print("We must keep going!")
