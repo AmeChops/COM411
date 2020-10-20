@@ -3,4 +3,4 @@ def directions():
 
   print(directions)
 
-directions()
+run = directions()
