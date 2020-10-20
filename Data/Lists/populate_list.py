@@ -1,25 +1,27 @@
 def directions():
   directions = ["Move Forward", "Move Backward", "Turn Left", "Turn Right"]
-  return(directions)
+  
+  return directions
 
 def menu():
-  print ("Please select a direction")
+  print("Please select a direction")
   direction = directions()
   
   for index in range(len(direction)):
     print("{}: {}".format(int(index), direction[index]))
   
-  user_selection = int(input())
+  direction_index = int(input())
 
-  return (direction)
+  return direction[direction_index]
 
 def run():
-  
   route = []
-  print ("Working out escape route...")
+  print("Working out escape route...")
   
-  for steps in
-  print(menu)
-  route.append = input()
+  for count in range(5):
+    direction = menu()
+    route.append(direction)
+  
+  print("Escape route: {}".format(route))
 
-run(5)
+run()

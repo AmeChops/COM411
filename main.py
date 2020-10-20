@@ -1,16 +1,27 @@
-# setting up the function with no parameters 
-def myth():
-  # displaying initial message
-  print ("Who wishes to learn about the demidog Maui?")  
+def directions():
+  directions = ["Move Forward", "Move Backward", "Turn Left", "Turn Right"]
+  
+  return directions
 
-  # reading and storing user's response to question above
-  user_name = input()
+def menu():
+  print("Please select a direction")
+  direction = directions()
+  
+  for index in range(len(direction)):
+    print("{}: {}".format(int(index), direction[index]))
+  
+  direction_index = int(input())
 
-  # displaying the story message inserting the users input from previous step
-  print("Well, {}, he stole the heart of the goddess Te Fiti.".format(user_name))
+  return direction[direction_index]
 
-  # displaying the final message here (requirement 5 above)
-  print("You must find Maui and lift the curse!")
+def run():
+  route = []
+  print("Working out escape route...")
+  
+  for count in range(5):
+    direction = menu()
+    route.append(direction)
+  
+  print("Escape route: {}".format(route))
 
-# calling the function with no specified parameter as it is being read from the users input above
-myth()
+run()
