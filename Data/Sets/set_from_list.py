@@ -2,7 +2,8 @@ def observed():
   observations = []
 
   for count in range(7):
-    observation = input("Please enter an observation: ")
+    print("Please enter an observation: ")
+    observation = input
     observations.append(observation)
   
   return observations
@@ -13,11 +14,9 @@ def run():
   observations_set = set()
 
   for observation in observations:
-    observations_set.add((observation, observations.count(observation)))
+    occurences = observations.count(observation)
+    observations_set.add((observation, occurences))
    
   print(observations_set)
 
 run()
-
-
-
