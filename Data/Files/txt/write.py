@@ -1,5 +1,5 @@
 def search(filename):
-  print("Searching...")
+  print("Searching...", end = "")
   sections = []
   books = []
   
@@ -17,16 +17,19 @@ def search(filename):
   return data
 
 def save(filename, data):
-  print("Saving...")
+  print("Saving...", end = "")
 
   with open(filename, "w") as file:
     file.write("Sections: ")
-    for element in data[0]:
-      file.write(element + ", ")
+    for index in range(len(data[0])):
+      if (index < len(data[0]) -1):
+        file.write(f"{data[0][index]}, ")
+      else:
+        file.write(f"{data[0][index]}")
 
     file.write("\nBooks: ")
     for element in data[1]:
-      file.write(element + ", ")
+      file.write(f"{element}, ")
 
     print("Done!")
 
