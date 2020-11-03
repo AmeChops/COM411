@@ -3,7 +3,7 @@ def search(filename):
   
   with open(filename) as file:
     for line in file:
-      print(f"Looked in the {line}\n")
+      print(f"Looked in the {line}")
   
   print("Done!")
 
