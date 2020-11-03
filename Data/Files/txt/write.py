@@ -24,7 +24,7 @@ def save(filename, data):
     for element in data[0]:
       file.write(element + ", ")
 
-    file.write("Books: ")
+    file.write("\nBooks: ")
     for element in data[1]:
       file.write(element + ", ")
 
@@ -34,6 +34,5 @@ def run():
   data = search("Data/Files/txt/books.txt")
   save("Data/Files/txt/sections_books.txt", data)
   
-
 run()
 
