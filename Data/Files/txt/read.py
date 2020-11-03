@@ -3,12 +3,14 @@ def search(filename):
   
   with open(filename) as file:
     for line in file:
-      print(f"Looked in the {line}\n")
+      lines = file.read().split('\n')
+      for line in lines:
+        print(f"Looked in {line}.")
   
-  print("Done!")
+  print("...Done!")
 
 def run():
-  location = search("Data/Files/txt/locations.txt")
-  return location
-  
+  search("Data/Files/txt/locations.txt")
+    
 run()
+ 
