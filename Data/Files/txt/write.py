@@ -1,57 +1,32 @@
-def search(filename):
-
+def search(file_path):
   print("Searching...", end = "")
-
-  print("Searching...")
-
+  
   sections = []
   books = []
   
-  with open(filename) as file:
+  with open(file_path) as file:
     for line in file:
       if line.startswith("Section"):
-        split = line.split(":")
-        sections.append(split[1][:-1])
+        section_name = line.split(":")[1]
+        sections.append(section_name.strip())
       else:
-        books.append(line[:-1])
+        books.append(line.strip())
   
   print("Done!")
-  data = (sections, books)
+  
+  return (sections, books)
 
-  return data
-
-def save(filename, data):
-
+def save(file_path, data):
   print("Saving...", end = "")
-
-  with open(filename, "w") as file:
-    file.write("Sections: ")
-    for index in range(len(data[0])):
-      if (index < len(data[0]) -1):
-        file.write(f"{data[0][index]}, ")
-      else:
-        file.write(f"{data[0][index]}")
-
-    file.write("\nBooks: ")
-    for element in data[1]:
-      file.write(f"{element}, ")
-
-  print("Saving...")
-
-  with open(filename, "w") as file:
-    file.write("Sections: ")
-    for element in data[0]:
-      file.write(element + ", ")
-
-    file.write("\nBooks: ")
-    for element in data[1]:
-      file.write(element + ", ")
-
-    print("Done!")
+  
+  with open(file_path, "w") as file:
+    file.write(f"Sections: {data[0]}\n")
+    file.write(f"Books: {data[1]}\n")
+  
+  print("Done!")
 
 def run():
-  data = search("Data/Files/txt/books.txt")
-  save("Data/Files/txt/sections_books.txt", data)
-  
-run()
+  data = search("data/files/txt/books.txt")
+  save("data/files/txt/section-books.txt", data)
 
+run()
