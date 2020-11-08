@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 Sections: The Law Section, The Technology Section, The History Section
+=======
+Sections: The Law Section, The Technology Section, The History Section, 
+>>>>>>> fbccaac756b6da3b826f692dda64c73734ec6624
 Books: The Magna Carta, How to build a robot, How to build a flying car, The history of everything, 

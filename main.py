@@ -15,7 +15,7 @@ def remove_observations(observations):
     answer = input()
 
     if (answer == "yes"):
-      print("Waht would you like to remove?")
+      print("What would you like to remove?")
       to_remove = input()
       observations.remove(to_remove)
     else:
