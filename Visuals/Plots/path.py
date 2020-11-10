@@ -12,7 +12,7 @@ def path():
   x_values = []
   y_values = []
 
-  for i in range(4):
+  for index in range(4):
     data = coordinate()
     x_values.append(data[0])
     y_values.append(data[1])
