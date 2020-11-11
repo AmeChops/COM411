@@ -1,8 +1,8 @@
 import matplotlib.pyplot as plt
 
 def coordinate():
-  x = input("Please enter an X value")
-  y = input("Please enter a Y value")
+  x = input("Please enter an X value: ")
+  y = input("Please enter a Y value: ")
   x_and_y_values = (x, y)
 
   return x_and_y_values
@@ -22,6 +22,8 @@ def path():
 def run():
   values = path()
   plt.plot(values[0], values[1], "ro--")
+  plt.xlabels("x values")
+  plt.ylabels("y labels")
   plt.show()
 
 run()
