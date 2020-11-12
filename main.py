@@ -36,7 +36,7 @@ def save(quotes):
     
 
 # calling the function with no specified parameter
-friedns = gang()
+friends = gang()
 quotes = phrases(friends)
 print(f"\nPhrases: {quotes}\n")
 save
