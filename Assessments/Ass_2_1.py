@@ -16,6 +16,7 @@ def gang():
 
   # displaying the contents of the list 'friends' with final message
   print(friends, "\n...Done!")
+  return friends()
 
 # calling the function with no specified parameter
 gang()
