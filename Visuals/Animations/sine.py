@@ -9,13 +9,17 @@ fig, ax = plt.subplots()
 #creating function with 1 parameter
 def animate(frame):
   
-  #setting limits on the x and y axis
+  #calling the global variable
+  global ax
+
+  #setting limits on the x and y axis (in degrees)
   ax.set_xlim(0, 720)
   ax.set_ylim(-1, 1)
 
   #setting the values for the x and y axis
   x = np.arange(0, frame)
-  y = np.sin(x * np.pi/180)
+  x_in_radians = x * (np.pi / 180)
+  y = np.sin(x_in_radians)
 
   #setting the plots to the current frame number and display a red circle marker 
   ax.plot(x, y, 'g')
