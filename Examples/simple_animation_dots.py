@@ -4,7 +4,6 @@ import matplotlib.animation as animation
 fig, ax = plt.subplots()
 
 def animate(frame):
-  ax.cla()
   ax.set_xlim(0, 10)
   ax.set_ylim(0, 10)
   ax.plot(frame, frame, 'ro')
