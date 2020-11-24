@@ -8,11 +8,14 @@ fig, ax = plt.subplots()
 
 #creating function with 1 parameter
 def animate(frame):
+  #calling the global variable
+  global ax
+  
   #clearing the current axes
   ax.cla()
 
   #setting limits on the x and y axis
-  ax.set_xlim(0, np.pi)
+  ax.set_xlim(0, 2 * np.pi)
   ax.set_ylim(-1, 1)
 
   #setting the values for the x and y axis
