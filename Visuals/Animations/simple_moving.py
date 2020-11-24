@@ -10,6 +10,9 @@ def animate(frame):
   #calling global variable  
   global ax
 
+  #clearing the axes
+  ax.cla()
+
   #setting limits on the x and y axis
   ax.set_xlim(0, 10)
   ax.set_ylim(0, 10)
