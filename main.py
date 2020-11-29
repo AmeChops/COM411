@@ -1,24 +1,32 @@
 import matplotlib.pyplot as plt
 
-def small():
-  x = [3, 3, 4, 4, 3]
-  y = [3, 4, 4, 3, 3]
-  plt.plot(x, y, 'r:o')
+def coordinate():
+  print("Please enter an x value:")
+  x = int(input())
   
-def medium():
-  x = [2, 2, 5, 5, 2]
-  y = [2, 5, 5, 2, 2]
-  plt.plot(x, y, 'g--s')
+  print("Please enter a y value:")
+  y = int(input())
   
-def large():
-  x = [1, 1, 6, 6, 1]
-  y = [1, 6, 6, 1, 1]
-  plt.plot(x, y, 'b-p')
+  return (x, y)
+  
+def path():
+  print("Retrieving path...")
+  x_values = []
+  y_values = []
+  
+  for count in range(4):
+    data = coordinate()
+    x_values.append(data[0])
+    y_values.append(data[1])
+    
+  return [x_values, y_values]
+  
   
 def run():
-  small()
-  medium()
-  large()
+  values = path()
+  plt.plot(values[0], values[1], "r--o")
+  plt.xlabel("x values")
+  plt.ylabel("y values")
   plt.show()
   
 run()

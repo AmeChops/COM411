@@ -1,29 +1,32 @@
 import matplotlib.pyplot as plt
 
 def coordinate():
-  x = input("Please enter an X value: ")
-  y = input("Please enter a Y value: ")
-  x_and_y_values = (x, y)
-
-  return x_and_y_values
-
+  print("Please enter an x value:")
+  x = int(input())
+  
+  print("Please enter a y value:")
+  y = int(input())
+  
+  return (x, y)
+  
 def path():
   print("Retrieving path...")
   x_values = []
   y_values = []
-
-  for index in range(4):
+  
+  for count in range(4):
     data = coordinate()
     x_values.append(data[0])
     y_values.append(data[1])
-  
+    
   return [x_values, y_values]
-
+  
+  
 def run():
   values = path()
-  plt.plot(values[0], values[1], "ro--")
-  plt.xlabels("x values")
-  plt.ylabels("y labels")
+  plt.plot(values[0], values[1], "r--o")
+  plt.xlabel("x values")
+  plt.ylabel("y values")
   plt.show()
-
+  
 run()
