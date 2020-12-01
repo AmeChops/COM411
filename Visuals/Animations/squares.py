@@ -30,7 +30,7 @@ def run():
   global fig
 
   #setting the animation type with frames and intervals
-  squars_animation = animation.FuncAnimation(fig, animate, frames = 100, interval = 100, init_func = init)
+  squares_animation = animation.FuncAnimation(fig, animate, frames = 100, interval = 100, init_func = init)
 
   #ensuring the chart displays
   plt.show()

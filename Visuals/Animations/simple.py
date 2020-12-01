@@ -14,8 +14,8 @@ def animate(frame):
   ax.set_xlim(0, 10)
   ax.set_ylim(0, 10)
   
-  #setting the plots to the current frame number and display a red circle marker 
-  ax.plot(frame, frame, 'ro')
+  #setting the plots to the current frame number
+  ax.plot(frame, frame)
 
 #creating function to run the program
 def run():
